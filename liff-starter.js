@@ -37,7 +37,41 @@ function initializeApp(data) {
             "type": "image",
             "originalContentUrl": "https://www.penghu-nsa.gov.tw/FileDownload/Album/Big/20161012162551758864338.jpg",
             "previewImageUrl": "https://free.com.tw/blog/wp-content/uploads/2014/08/Placekitten480-g.jpg"
-        }]).then(function () {
+        }, {
+          "type": "template",
+          "altText": "This is a buttons template",
+          "template": {
+              "type": "buttons",
+              "thumbnailImageUrl": "https://asset2.cxnmarksandspencer.com/is/image/mands/44e79d5a6007d11fd420b6c302d0f2fc0ef404da?$Homepage_600x330$",
+              "imageAspectRatio": "rectangle",
+              "imageSize": "cover",
+              "imageBackgroundColor": "#FFFFFF",
+              "title": "Menu",
+              "text": "Please select",
+              "defaultAction": {
+                  "type": "uri",
+                  "label": "View detail",
+                  "uri": "http://example.com/page/123"
+              },
+              "actions": [
+                  {
+                    "type": "postback",
+                    "label": "Buy",
+                    "data": "action=buy&itemid=123"
+                  },
+                  {
+                    "type": "postback",
+                    "label": "Add to cart",
+                    "data": "action=add&itemid=123"
+                  },
+                  {
+                    "type": "uri",
+                    "label": "View detail",
+                    "uri": "http://example.com/page/123"
+                  }
+              ]
+          }
+    }]).then(function () {
             window.alert("Message sent");
         }).catch(function (error) {
             window.alert("Error sending message: " + error);

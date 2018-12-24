@@ -34,17 +34,9 @@ function initializeApp(data) {
             packageId: '2',
             stickerId: '144'
         }, {
-            "type": "video",
-            "originalContentUrl": "https://example.com/original.mp4",
-            "previewImageUrl": "https://example.com/preview.jpg"
-        }, {
             "type": "image",
-            "originalContentUrl": "https://example.com/original.jpg",
-            "previewImageUrl": "https://example.com/preview.jpg"
-        }, {
-            "type": "audio",
-            "originalContentUrl": "https://example.com/original.m4a",
-            "duration": 60000
+            "originalContentUrl": "https://www.penghu-nsa.gov.tw/FileDownload/Album/Big/20161012162551758864338.jpg",
+            "previewImageUrl": "https://free.com.tw/blog/wp-content/uploads/2014/08/Placekitten480-g.jpg"
         }]).then(function () {
             window.alert("Message sent");
         }).catch(function (error) {
